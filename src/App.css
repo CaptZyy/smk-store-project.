@@ -187,6 +187,15 @@ body {
   color: white;
 }
 
+.qty-control-button:hover{
+  background: black;
+  color: white;
+}
+
+.checkout-btn-confirm:hover {
+  color: white;
+} 
+
 @media (max-width: 768px) {
   .hero-title { font-size: 2.2rem; }
   .navbar, .container { padding: 1rem 5%; }

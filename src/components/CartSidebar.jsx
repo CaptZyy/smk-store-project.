@@ -97,7 +97,7 @@ function CartSidebar({ isOpen, closeCart, cartItems = [], updateQty }) {
                     <small>{formatRupiah(item.price)}</small>
                   </div>
                   <div className="qty-control">
-                    <button onClick={() => updateQty(item.id, -1)}
+                    <button className="qty-control-button" onClick={() => updateQty(item.id, -1)}
                       style={{
                         height:"25px",
                         width:"25px",
@@ -107,7 +107,7 @@ function CartSidebar({ isOpen, closeCart, cartItems = [], updateQty }) {
                         borderRadius:"5px"
                       }}>-</button>
                     <span>{item.qty}</span>
-                    <button onClick={() => updateQty(item.id, 1)}
+                    <button className="qty-control-button" onClick={() => updateQty(item.id, 1)}
                       style={{
                         height:"25px",
                         width:"25px",
@@ -145,8 +145,8 @@ function CartSidebar({ isOpen, closeCart, cartItems = [], updateQty }) {
                 {formatRupiah(totalPrice)}
               </h3>
               <button
-                className="checkout-btn-2"
-                style={{ color:"black",marginTop: "20px", background: "#27ae60", width:"200px", height:"35px", borderRadius:"20px", borderStyle:"none" }}
+                className="checkout-btn-confirm"
+                style={{ marginTop: "20px", background: "#27ae60", width:"200px", height:"35px", borderRadius:"20px", borderStyle:"none" }}
                 onClick={() => setView("struk")}
               >
                 Konfirmasi Sudah Bayar
